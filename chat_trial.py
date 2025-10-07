@@ -56,7 +56,9 @@ with col3:
     - **Photography**, which has become both a creative outlet and a professional service  
 
     I’m comfortable presenting, working with new teams, and adapting to unfamiliar challenges.  
-    I aim to bring that mix of curiosity, professionalism, and reliability to everything I do.
+    I aim to bring that mix of curiosity, professionalism, and reliability to everything I do.  
+    
+    **If you are interested in hiring me or learning more about my skills, please reach out using the contact information below or fill out the inquiry form.**
     """)
 with col4:
     st_lottie(lottie_skills, height=250, key="skills")  # replace None with your Lottie variable
@@ -68,6 +70,7 @@ st.header("Contact Me")
 col5, col6 = st.columns([2, 1])
 with col5:
     st.markdown("""
+    Feel free to reach out through any of the following channels:  
     📧 **Email:** [gbouferg@ualberta.ca](mailto:gbouferg@ualberta.ca)  
     📸 **Instagram:** [@skwaka_jr](https://www.instagram.com/skwaka_jr)  
     💼 **LinkedIn:** [Gabriel Bouferguene](https://www.linkedin.com/in/gabriel-bouferguene-779835367)
@@ -81,7 +84,7 @@ st.write("---")
 st.header("Inquiries for Me")
 
 st.markdown("""
-If you'd like to reach out directly, please fill out the form below.
+If you'd like to reach out directly for anything (resume, interview, photography booking, etc.), please fill out the form below.
 """)
 
 contact_form = """
@@ -93,9 +96,5 @@ contact_form = """
      <button type="submit" style="background-color:#0E1117;color:white;padding:10px 20px;border:none;border-radius:5px;">Send</button>
 </form>
 """
-col7, col8 = st.columns([2, 1])
-with col7:
-    st.markdown(contact_form, unsafe_allow_html=True)
 
-with col8:
-    st_lottie(lottie_wave, height=230, key="form") 
+st.markdown(contact_form, unsafe_allow_html=True)
