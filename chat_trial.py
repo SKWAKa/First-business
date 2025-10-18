@@ -87,14 +87,15 @@ st.markdown("""
 If you'd like to reach out directly for anything (resume, interview, photography booking, etc.), please fill out the form below.
 """)
 
-#contact_form = """
-#<form action="https://formsubmit.co/gbouferg@ualberta.ca" method="POST">
-#     <input type="hidden" name="_captcha" value="false">
-#     <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:8px;margin:5px 0;">
-#     <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:8px;margin:5px 0;">
-#     <textarea name="message" placeholder="Your Message" required style="width:100%;padding:8px;margin:5px 0;"></textarea>
-#     <button type="submit" style="background-color:#0E1117;color:white;padding:10px 20px;border:none;border-radius:5px;">Send</button>
-#</form>
-#"""
-#
-#st.markdown(contact_form, unsafe_allow_html=True)
+contact_form = """
+<form action="https://formsubmit.co/gbouferg@ualberta.ca" method="POST">
+     <input type="hidden" name="_captcha" value="false">
+     <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:8px;margin:5px 0;">
+     <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:8px;margin:5px 0;">
+     <textarea name="message" placeholder="Your Message" required style="width:100%;padding:8px;margin:5px 0;"></textarea>
+     <button type="submit" style="background-color:#0E1117;color:white;padding:10px 20px;border:none;border-radius:5px;">Send</button>
+</form>
+"""
+
+
+st.markdown(contact_form, unsafe_allow_html=True)
